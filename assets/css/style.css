@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #2e80ce;
+  --primary-color: #10375c;
+  --primary-text-color: #575f66;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Sora", sans-serif;
+}
+
+/* COMMON */
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 205px;
+  border-radius: 30px;
+  background: var(--bg-color);
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* HEADER */
+.header {
+  background: var(--primary-color);
+  min-height: 100vh;
+  padding-bottom: 110px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 8px;
+}
+
+.navbar__list {
+  display: flex;
+}
+
+.header__btn--signin,
+.navbar__link {
+  display: flex;
+  align-items: center;
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+  padding: 8px 21px;
+}
+
+.header__btn--signin:hover,
+.navbar__link:hover,
+.navbar__link--active {
+  color: #fff;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--active::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  left: 0;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 11px;
+}
+
+.header__btn {
+  display: flex;
+  align-items: center;
+}
+
+.header__btn--signup {
+  min-width: 104px;
+  font-size: 1.6rem;
+  line-height: 44px;
+  border-radius: 22px;
+  margin-left: 20px;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 76px;
+}
+
+.hero__content {
+  width: 44%;
+}
+
+.hero__heading {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 1.143;
+  letter-spacing: -1.4px;
+}
+
+.hero__desc {
+  color: #c9d2da;
+  font-family: Sora;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.67;
+  margin-top: 22px;
+}
+
+.hero__cta-group {
+  margin-top: 38px;
+}
+
+.hero__tel {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67;
+  margin-left: 38px;
+}
+
+.hero__media {
+  width: 46%;
+}
+
+.hero__images {
+  display: flex;
+  align-items: center;
+}
+
+.hero__img {
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.hero__img--large {
+  width: 330px;
+  height: 540px;
+}
+
+.hero__img--small {
+  width: 210px;
+  height: 410px;
+  margin-left: -6px;
+}
