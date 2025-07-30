@@ -457,3 +457,43 @@ body {
   justify-content: center;
   margin-top: 38px;
 }
+
+/* CTA */
+.cta {
+  padding: 180px 0 85px;
+}
+
+.cta__body {
+  position: relative;
+  border-radius: 4px;
+  background: #2e80ce;
+  height: 427px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+}
+
+.cta__img {
+  position: absolute;
+  bottom: 0;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+}
+
+.cta__heading {
+  max-width: 489px;
+  color: #fff;
+}
+
+.cta__desc {
+  min-width: 586px;
+  color: #fff;
+}
+
+.cta__install {
+  display: flex;
+  gap: 30px;
+  margin-top: 38px;
+}
