@@ -5,7 +5,7 @@
 :root {
   --bg-color: #2e80ce;
   --primary-color: #10375c;
-  --primary-text-color: #575f66;
+  --primary-desc-color: #575f66;
 }
 
 html {
@@ -50,11 +50,41 @@ body {
 
 .section-desc {
   width: 468px;
-  color: var(--primary-text-color);
+  color: var(--primary-desc-color);
   font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.67;
   margin-top: 18px;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.control__btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: var(--primary-desc-color);
+  border-radius: 50%;
+  border: 1px solid var(--primary-desc-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.control-icon--next {
+  rotate: 180deg;
+}
+
+.control__btn:hover {
+  color: #fff;
+  background: var(--bg-color);
+  border: 1px solid var(--bg-color);
 }
 
 /* HEADER */
@@ -257,7 +287,7 @@ body {
 }
 
 .service-item__desc {
-  color: var(--primary-text-color);
+  color: var(--primary-desc-color);
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.75;
@@ -296,7 +326,7 @@ body {
 
 .work-item:hover .work-item__more {
   color: var(--bg-color);
-  font-weight: 400;
+  text-shadow: 1px 0 0 currentColor;
 }
 
 .work-item__heading {
@@ -309,7 +339,7 @@ body {
 
 .work-item__more,
 .work-item__desc {
-  color: var(--primary-text-color);
+  color: var(--primary-desc-color);
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.75;
@@ -324,7 +354,8 @@ body {
 /* ABOUT */
 
 .about {
-  padding: 170px 0;
+  padding: 85px 0;
+  margin-top: 85px;
 }
 
 .about-body {
@@ -360,5 +391,69 @@ body {
 }
 
 .about__more {
+  margin-top: 38px;
+}
+
+/* TEAM */
+.team {
+  padding: 85px 0;
+}
+
+.team-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-meet {
+  margin-top: 38px;
+}
+
+.team__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  margin-top: 70px;
+}
+
+.team-item:hover .team-item__thumb {
+  transform: scale(1.1);
+}
+
+.team-item__img-bg {
+  border-radius: 6px;
+  background: #eaf6ff;
+  padding-top: 28px;
+  overflow: hidden;
+}
+
+.team-item__thumb {
+  max-width: 100%;
+  height: 290px;
+  display: block;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.team-item__name {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+  margin-top: 12px;
+}
+
+.team-item__desc {
+  color: var(--primary-desc-color);
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.86;
+}
+
+.team__control {
+  justify-content: center;
   margin-top: 38px;
 }
