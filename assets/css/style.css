@@ -497,3 +497,254 @@ body {
   gap: 30px;
   margin-top: 38px;
 }
+
+/* BLOG */
+.blog {
+  padding: 85px 0;
+}
+
+.blog__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog__content {
+  width: 40%;
+}
+
+.blog__heading {
+  max-width: 470px;
+}
+
+.blog__more {
+  display: inline-block;
+  color: var(--primary-color);
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.56;
+  margin: 28px 0;
+}
+
+.blog__more:hover {
+  text-decoration: underline;
+}
+
+.blog__list {
+  display: grid;
+  width: 48.7%;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+}
+
+.blog-item {
+  max-width: 100%;
+  border-radius: 12px;
+  border: 1px solid #e8ebee;
+  background: #fff;
+  overflow: hidden;
+}
+
+.blog-item:hover {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 18px 50px 0 rgba(0, 0, 0, 0.05);
+}
+
+.blog-item__img {
+  height: 172px;
+  overflow: hidden;
+}
+
+.blog-item__thumb {
+  width: 270px;
+  height: 172px;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.blog-item:hover .blog-item__thumb {
+  transform: scale(1.1);
+}
+
+.blog-item__info {
+  padding: 18px 22px;
+}
+
+.blog-item__heading {
+  color: var(--primary-color);
+  font-family: Sora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.63;
+}
+
+.blog-item__desc {
+  color: var(--primary-desc-color);
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.71;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.blog-item__more {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.blog-item__more:hover {
+  color: var(--bg-color);
+  text-shadow: 1px 0 0 currentColor;
+}
+
+/* APPOINTMENT */
+.appointment {
+  padding: 85px 0 170px;
+}
+
+.appointment__inner {
+  display: flex;
+  flex-direction: column;
+  background: #f6fbff;
+  align-items: center;
+  text-align: center;
+  padding: 100px;
+}
+
+.appointment__header::after {
+  content: "";
+  display: block;
+  width: 136px;
+  height: 2px;
+  background: var(--bg-color);
+  margin: 18px auto 0;
+  transition: 1s ease;
+}
+
+.appointment__desc {
+  width: 73%;
+  margin-bottom: 38px;
+}
+
+.appointment__header:has(~ .appointment__btn:hover)::after {
+  width: 100%;
+}
+
+/* FOOTER */
+.footer {
+  background: var(--primary-color);
+  font-family: "Open Sans";
+  padding-top: 100px;
+  padding-bottom: 42px;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  column-gap: 78px;
+  border-bottom: 1px solid var(--primary-desc-color);
+}
+
+.footer__heading {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+.footer__email::placeholder,
+.footer__desc,
+.footer-item__link {
+  color: #a9b3bb;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+}
+
+.footer__desc {
+  margin-top: 21px;
+}
+
+.footer-item {
+  margin-bottom: 10px;
+}
+
+.footer-item__link {
+  white-space: nowrap;
+}
+
+.footer-item__link:hover {
+  text-decoration: underline;
+}
+
+.footer__social,
+.footer__list {
+  margin-top: 20px;
+  margin-bottom: 28px;
+}
+
+.footer__social-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--bg-color);
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.footer__social-item:hover {
+  background: var(--bg-color);
+  color: #fff;
+}
+
+.footer__form {
+  display: flex;
+  margin-top: 10px;
+  gap: 12px;
+}
+
+.footer__email {
+  width: 212px;
+  height: 46px;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  padding: 10px;
+}
+
+.footer__submit {
+  width: 108px;
+  height: 46px;
+  background: var(--bg-color);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+  border: none;
+  cursor: pointer;
+}
+
+.footer__submit:hover {
+  opacity: 0.9;
+}
+
+.footer__copyright {
+  color: #aab3ba;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+  margin-top: 28px;
+}
